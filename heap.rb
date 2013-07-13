@@ -9,10 +9,6 @@ def remove_min(heap)
   return heap
 end
 
-def parent(i)
-  (i-1) / 2
-end
-
 def left_child(i)
   2*i + 1
 end
@@ -44,7 +40,6 @@ def down_heapify(heap, i)
     down_heapify(heap, right_child(i))
     return heap
   end
-
 end
 
 def build_heap(heap)
