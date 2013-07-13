@@ -61,8 +61,8 @@ end
 
 def test_heap
   h = [*0...10]
-  puts build_heap(h)
-  puts remove_min(h)
+  build_heap(h)
+  remove_min(h)
   puts 'h[0] == 1?', h[0] == 1
 end
 
